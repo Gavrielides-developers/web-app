@@ -6,7 +6,7 @@
 		{% if page.title %}
 			<div class="Page-Grid__grid-wrap__box">
 				<a href="{{ page.url | prepend: domain }}">
-					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image }}');">
+ 					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image | prepend: domain}}');">
 						<div class="Page-Grid__grid-wrap__box__boxInner__title">{{ page.title }}</div>											
 					</div>
 				</a>	
