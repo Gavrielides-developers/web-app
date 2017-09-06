@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic-ext');
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    background: #FFF;
+}
+
+/* Typography */
+a,
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:visited:hover,
+a:visited:active {
+    text-decoration: underline;
+}
+.h1, h1 { 
+	font-weight:300; 
+	font-size: 38px !important; 
+	color: #000;
+	Margin-bottom: 18px;
+}
+.h2, h2 { 
+	font-weight:300; 
+	font-size: 28px !important; 
+	color: #000;
+	Margin-top: 30px !important;
+	Margin-bottom: 10px !important;
+}
+.h3, h3 { 
+	font-weight:300; 
+	font-size: 22px !important; 
+	color: #000;
+	Margin-bottom: 15px !important;
+}
+.h4, h4 { 
+	font-weight:400 !important; 
+	font-size: 18px !important; 
+	color: #000;
+}
+.h5, h5 { 
+	font-weight:400; 
+	font-size: 16px;
+	color: #000000;
+	Margin-bottom: 5px !important;
+}
+.h6, h6 { 
+	font-weight:400; 
+	font-size: 14px;
+	color: #000000
+	Margin-bottom: 2px !important;
+}
+.button {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition:  .15s;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 0;
+    background: #cc0000;
+    color: #FFF
+}
+.button:active,
+.button:hover {
+    text-decoration: none;
+	background-color: #ff0000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition:  .15s
+}
+.button:visited {
+    color: #FFF
+}
+table {
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+	margin: 20px 0;
+}
+
+table .even {
+    background-color: #FFF
+}
+
+table * {
+    font-size: 14px
+}
+
+table thead,
+table th {
+    line-height: 18px;
+    font-weight: bold;
+    padding: 10px 8px;
+    background: #F2F2F2;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
+	text-align: left;
+}
+table td {
+    vertical-align: top;
+    border-width: 0 1px;
+    padding: 10px 4px;
+    border-bottom: 1px solid #ccc
+}
+ol li,
+ul li {
+    line-height: 20px;
+    margin: 15px 0 0
+}
+.note {background-color: #eee; padding: 15px; border: 1px solid #ccc;}
+/* Top Bar */
+.top--bar {background-color:#f2f2f2; border-bottom:1px solid #dedede; padding: 5px 0;}
+.top--bar-phone {font-size: 11px; color: #444; text-transform: uppercase; letter-spacing: 1px;}
+.top--bar-language {font-size: 11px; color: #000; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; text-align: right;}
+/* Header */
+.header {padding:10px 0;}
+
+.header ul {list-style:none; margin:0px; padding:15px 0; width:100%; display:block; text-align:right;}
+.header ul li {display:inline-block; margin:0px 0px; padding:5px 0px;}
+.header ul li a{ padding:4px 15px; color: #000; font-weight:400; font-size: 14px; text-decoration: none}
+.header ul li a:hover{ text-decoration:none; color: red;}
+@media (max-width: 768px) {
+.header ul li {display:block; margin:0px 0px; padding:6px 0px; width:100%; border-bottom:1px solid #ccc;}
+.header ul li a{width:100%;margin-left:-15px;padding:7px 15px; display:block;}
+}
+.sub--header {display:table; width:100%; font-size:16px; background-color:#fff; border-top:1px solid #dedede; border-bottom:1px solid #dedede; padding:0px; text-align:center; font-size:14px; color: #000;}
+.sub--header ul {list-style:none; margin:0px; padding:5px 0; width:100%; display:block; }
+.sub--header ul li {display:inline-block; margin:0px 0px; padding:5px 0px;}
+.sub--header ul li a{ padding:4px 15px; color: #000; font-weight:400; font-size: 14px; text-decoration: none}
+.sub--header ul li a:hover{ text-decoration:none; color: red; }
+@media (max-width: 768px) {
+.sub--header ul li {display:block; margin:0px 0px; padding:6px 0px; width:100%; border-bottom:1px solid #ccc;}
+.sub--header ul li a{width:100%;margin-left:-15px;padding:7px 15px; display:block;}
+}
+
+
+
+/* Pages */
+.main--section {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+.gallery-thumbs {}
+.gallery-thumbs img {padding: 5px; border:1px solid #dedede; border-radius: 3px; width: 100px;}
+/* resale */
+.Sirena-Lighthouse--header {
+	width: 100%; /* for IE 6 */
+	background:  
+	linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+	url(../images/1-big4-1030x465.jpg);
+    background-size: cover;
+	padding:40px 20px 30px 20px;
+	background-position: bottom center;
+	text-align:center;
+}
+/* montes */
+.Montes--header {
+	width: 100%; /* for IE 6 */
+	background:  
+	linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+	url(../images/montes-header-bg.jpg);
+    background-size: cover;
+	padding:40px 20px 30px 20px;
+	background-position: center;
+	text-align:center;
+}
+/* coralia */
+.Coralia--header {
+	width: 100%; /* for IE 6 */
+	background:  
+	linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+	url(../images/coralia/p3-big2.jpg);
+    background-size: cover;
+	padding:40px 20px 30px 20px;
+	background-position: center;
+	text-align:center;
+}
+/* Footer */
+.footer {background-color:#f2f2f2; border-top:1px solid #dedede; margin-top: 20px; padding:10px 0;}
+
+.footer--nav ul {list-style:none; margin:0px; padding:5px 0; width:100%; display:block;text-align:right; }
+.footer--nav ul li {display:inline-block; margin:0px 0px; padding:5px 0px;}
+.footer--nav ul li a{ padding:4px 15px; color: #000; font-weight:400; font-size: 12px; text-decoration: none}
+.footer--nav ul li a:hover{ text-decoration:none; color: red; }
+@media (max-width: 768px) {
+.footer--nav ul li {display:block; margin:0px 0px; padding:6px 0px; width:100%; border-bottom:1px solid #ccc;}
+.footer--nav ul li a{width:100%;margin-left:-15px;padding:7px 15px; display:block;}
+}
+/* Modifiers */
+.centered {text-align: center;}
+.text-right {text-align: right;}
+.font-sm {font-size: 14px}
+.font-xs {font-size: 12px}
+.block {display: block;}
+.height-lg {height: 300px;}
+.polaroid {padding: 7px; border:1px solid #dedede; border-radius: 3px;}
+.float-left {float: left;}
+.thumb-left {float: left; margin-right: 20px; margin-bottom: 20px;}
+.separator-line-wide {
+    height: 1px; 
+	background-color: #DEDEDE;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: block;
+}
+.separator-lg {
+    height: 30px
+}
