@@ -1,7 +1,7 @@
 {% include lang.html %}
 {% if siteLang == "en" %}
     {% assign NavLang = site.pages | where: "language", "en" %}
-			<li><a href="/en/">Home</a></li>
+			<li><a href="{{ "/en/" | prepend: domain }}">Home</a></li>
 	{% for page in NavLang %}
     {% if page.tag == "main" %}	
 		{% if page.title %}
