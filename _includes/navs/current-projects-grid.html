@@ -21,7 +21,7 @@
 		{% if page.title %}
 			<div class="Page-Grid__grid-wrap__box">
 				<a href="{{ page.url | prepend: domain }}">
-					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image }}');">
+					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image | prepend: domain }}');">
 						<div class="Page-Grid__grid-wrap__box__boxInner__title">{{ page.title }}</div>
 						<span class="Page-Grid__grid-wrap__box__boxInner__vendor"><img src="{{site.url}}{{ page.image }}" alt="{{ page.title }}"></span>
 						<div class="rte"></div>					
@@ -40,7 +40,7 @@
 				<a href="{{ page.url | prepend: domain }}">
 					<div class="Page-Grid__grid-wrap__box__boxInner">
 						<div class="Page-Grid__grid-wrap__box__boxInner__title">{{ page.title }}</div>
-						<span class="Page-Grid__grid-wrap__box__boxInner__vendor"><img src="{{site.url}}{{ page.image }}" alt="{{ page.title }}"></span>
+ 						<span class="Page-Grid__grid-wrap__box__boxInner__vendor"><img src="{{site.url}}{{ page.image| prepend: domain }}" alt="{{ page.title }}"></span>
 						<div class="rte"></div>					
 					</div>
 				</a>	
