@@ -1,0 +1,13 @@
+{% assign path = page.path | remove_first:'pages' | remove_last %}
+{% if path contains "/en/" %}{% assign siteLang = 'en' %}{% assign LangUrl = '/en/' %}
+{% elsif path contains "/ru/" %}{% assign siteLang = 'ru' %}{% assign LangUrl = '/ru/' %}
+{% else %}
+{% assign siteLang = 'en' %}{% assign LangUrl = '/en/' %}
+{% endif %}
+
+{% assign coresource = site.github.url %}
+{% if coresource contains "localhost" %}{% assign domain = site.url %}
+{% elsif coresource contains "https" %}{% assign domain = site.github.url %}
+{% else %}
+{% assign domain = site.github.url | replace: 'http', 'https' %}
+{% endif %}
