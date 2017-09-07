@@ -5,8 +5,8 @@
     {% if page.inc == "completed-project" %}	
 		{% if page.title %}
 			<div class="Page-Grid__grid-wrap__box">
-				<a href="{{site.url}}{{ page.permalink }}">
-					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image }}');">
+				<a href="{{ page.url | prepend: domain }}">
+					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image | prepend: domain  }}');">
 						<div class="Page-Grid__grid-wrap__box__boxInner__title">{{ page.title }}</div>											
 					</div>
 				</a>	
@@ -20,8 +20,8 @@
 	{% if page.inc == "completed-project" %}
 		{% if page.title %}
 			<div class="Page-Grid__grid-wrap__box">
-				<a href="{{site.url}}{{ page.permalink }}">
-					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image }}');">
+				<a href="{{ page.url | prepend: domain }}">
+					<div class="Page-Grid__grid-wrap__box__boxInner" style="background-image:url('{{ page.image | prepend: domain }}');">
 						<div class="Page-Grid__grid-wrap__box__boxInner__title">{{ page.title }}</div>
 						<span class="Page-Grid__grid-wrap__box__boxInner__vendor"><img src="{{site.url}}{{ page.image }}" alt="{{ page.title }}"></span>
 						<div class="rte"></div>					
@@ -37,7 +37,7 @@
     {% if page.inc == "completed-project" %}	
 		{% if page.title %}
 			<div class="Page-Grid__grid-wrap__box">
-				<a href="{{site.url}}{{ page.permalink }}">
+				<a href="{{ page.url | prepend: domain }}">
 					<div class="Page-Grid__grid-wrap__box__boxInner">
 						<div class="Page-Grid__grid-wrap__box__boxInner__title">{{ page.title }}</div>
 						<span class="Page-Grid__grid-wrap__box__boxInner__vendor"><img src="{{site.url}}{{ page.image }}" alt="{{ page.title }}"></span>
