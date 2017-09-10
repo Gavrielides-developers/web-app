@@ -3,12 +3,15 @@
 		<div class="row">
 			<div class="col-md">
 				<div class="top--bar-phone">
-					Sales Inquiries Phone: (357) 26 942 428
+					{% if siteLang == 'ru' %}Телефон Службы Продаж: (357) 26 942 428{% else %}Sales Inquiries Phone: (357) 26 942 428{% endif %}
 				</div>
 			</div>
 			<div class="col-md">
 				<div class="top--bar-language">
-					Русский
+					<ul>
+						<li class="{% if siteLang == 'en' %}hidden{% endif %}"><a href="{{ '/' | prepend: domain }}">English</a></li>
+						<li class="{% if siteLang == 'ru' %}hidden{% endif %}"><a href="{{ '/ru/' | prepend: domain }}">Русский</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
