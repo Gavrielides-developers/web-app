@@ -1,2 +1,3 @@
-# web-app
-Core Web App
+# Costas Gavrielides
+
+[![Build Status](https://travis-ci.org/Gavrielides-developers/web-app.svg?branch=master)](https://travis-ci.org/Gavrielides-developers/web-app)

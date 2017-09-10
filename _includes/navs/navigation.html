@@ -1,0 +1,32 @@
+{% include lang.html %}
+{% if siteLang == "en" %}
+    {% assign NavLang = site.pages | where: "language", "en" %}
+			<li><a href="{{ "/en/" | prepend: domain }}">Home</a></li>
+	{% for page in NavLang %}
+    {% if page.tag == "main" %}	
+		{% if page.title %}
+			<li><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+		{% endif %}
+	{% endif %}	
+	{% endfor %}
+{% elsif siteLang == "ru" %}
+	{% assign NavLang = site.pages | where: "language", "ru" %}
+			<li><a href="{{ "/ru/" | prepend: domain }}">Главная страница</a></li>
+	{% for page in NavLang %}
+	{% if page.tag == "main" %}
+		{% if page.title %}
+			<li><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+		{% endif %}
+	{% endif %}
+	{% endfor %}
+{% else %}
+{% assign NavLang = site.pages | where: "language", "en" %}
+			<li><a href="{{ "/en/" | prepend: domain }}">Home</a></li>
+	{% for page in NavLang %}
+    {% if page.tag == "main" %}	
+		{% if page.title %}
+			<li><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+		{% endif %}
+	{% endif %}	
+	{% endfor %}
+{% endif %}	
