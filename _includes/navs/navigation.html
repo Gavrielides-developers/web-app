@@ -11,7 +11,7 @@
 	{% endfor %}
 {% elsif siteLang == "ru" %}
 	{% assign NavLang = site.pages | where: "language", "ru" %}
-			<li><a href="/ru/">Главная страница</a></li>
+			<li><a href="{{ "/ru/" | prepend: domain }}">Главная страница</a></li>
 	{% for page in NavLang %}
 	{% if page.tag == "main" %}
 		{% if page.title %}
@@ -21,7 +21,7 @@
 	{% endfor %}
 {% else %}
 {% assign NavLang = site.pages | where: "language", "en" %}
-			<li><a href="/en/">Home</a></li>
+			<li><a href="{{ "/en/" | prepend: domain }}">Home</a></li>
 	{% for page in NavLang %}
     {% if page.tag == "main" %}	
 		{% if page.title %}
