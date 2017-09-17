@@ -153,7 +153,7 @@ ul li {
 .sub--header ul li a{width:100%;margin-left:-15px;padding:7px 15px; display:block;}
 }
 @media (max-width: 768px) {
-	.top--bar-language, .top--bar-phone {text-align: center; padding:5px 0;}
+	.top--bar-language, .top--bar-phone, .footer--nav ul li {text-align: center; padding:5px 0;}
 	.logo, .header ul li{text-align: center;}
 	.sub--header {background-color: #eee;}
 }
