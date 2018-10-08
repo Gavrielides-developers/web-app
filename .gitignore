@@ -1,0 +1,14 @@
+*~
+.idea/
+.grunt/
+.sass-cache/
+.vscode/
+dist/
+node_modules/
+CNAME
+.DS_Store
+*.swp
+npm-debug.log
+package-lock.json
+Gemfile.lock
+_site
