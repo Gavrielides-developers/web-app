@@ -231,14 +231,6 @@ img {max-width: 100%;}
 	background-color: #f2f2f2;
 	border: 2px solid #cccccc;
 }
-.icon-news {background: url(../icons/wn_icon.svg);}
-.icon-cryptocurrency {background: url(../icons/ctc_icon.svg);}
-.icon-analysis {background: url(../icons/waa_icon.svg);}
-.icon-webinars {background: url(../icons/w_icon.svg);}
-.icon-videos {background: url(../icons/v_icon.svg);}
-.icon-learningcenter {background: url(../icons/lc_icon.svg);}
-
-.webinar-date {padding-top: 5px;}
 
 .separator-lg {
     height: 30px
@@ -365,91 +357,6 @@ img {max-width: 100%;}
 
 .block-element {display: block;}
 
-
-
-
-
-/*
-.led__grid-wrap {overflow: hidden; margin: -10px -10px;}
-.led__grid-wrap p{margin: 10px 10px;}
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 33%;}
-.led__grid-wrap__box__boxInner {position: absolute; left: 10px; right: 10px; top: 10px; bottom: 10px; padding:0px; text-align:center; background:#f2f2f2; background-repeat:no-repeat; background-size:cover; background-position:center;}
-.led__grid-wrap__box__boxInner:hover {}
-.led__grid-wrap__box__boxInner__title {position:absolute; top:0px;left:0;right:0;padding:20px;}
-.led__grid-wrap__box__boxInner__vendor {display:block; float:left;position:absolute;bottom:5px;left:5px; right:5px; padding:0px; background:transparent; text-align:center;}
-.led__grid-wrap__box__boxInner__vendor img {max-width:60%; height:auto; margin:0 auto;}
-
-@media only screen and (max-width : 990px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 50%;}
-}
-@media only screen and (max-width : 768px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 70%;}
-}
-@media only screen and (max-width : 568px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 80%;}
-}
-@media only screen and (max-width : 480px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 100%; padding-bottom: 100%;}
-}
-*/
-/* grid cryptocurrencies-grid / MT5 */
-.led__grid-wrap {overflow: hidden; margin: -10px -10px;}
-.led__grid-wrap p{margin: 10px 10px;}
-.led__grid-wrap__box {float: left;  position: relative; width: 33.3%; padding-bottom: 40%;}
-.led__grid-wrap__box__boxInner {position: absolute; left: 10px; right: 10px; top: 10px; bottom: 10px; padding:0px; text-align:left; }
-.led__grid-wrap__box__boxInner:hover {}
-.led__grid-wrap__box__boxInner__title {position:absolute; top:0px;left:0;right:0;padding:0 20px;}
-.led__grid-wrap__box__boxInner__vendor {display:block; float:left;position:absolute;bottom:5px;left:5px; right:5px; padding:0px; background:transparent; text-align:left;}
-.led__grid-wrap__box__boxInner__vendor img {max-width:60%; height:auto; margin:0 auto;}
-
-@media only screen and (max-width : 990px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 50%;}
-}
-@media only screen and (max-width : 768px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 70%;}
-}
-@media only screen and (max-width : 568px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 80%;}
-}
-@media only screen and (max-width : 480px) {
-.led__grid-wrap__box {float: left;  position: relative; width: 100%; padding-bottom: 100%;}
-}
-/* MT5 2 */
-/*
-.list--box {
-	background-color: #f2f2f2;	
-	padding: 20px;
-	position: relative;
-}
-.list--box h2 {
-		min-height: 0px;
-	}
-@media only screen and (max-width : 768px) {
-	.list--box {		
-		margin: 15px 0;
-	}
-	.separator-lg {
-		display: none;
-	}
-}
-	.list--box-content {
-	min-height: 90px;
-	display: block;
-}
-@media only screen and (min-width : 992px ) {
-	.list--box h2 {
-		min-height: 0px;
-	}
-}
-	
-.list--box .box-button {
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-}
-*/
-/* cryptocurrencies-*/
 .list--box {	
 	padding: 40px 15px;
 }
@@ -481,25 +388,7 @@ img {max-width: 100%;}
 	.list--box-title {min-height: 0px!important; margin:10px 0px;}
 	.mob-hidden {display: none;}
 }
-/* Blog V2 */
-.list--box-title-blog {
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:300; 
-	font-size: 28px ; 
-	color: #E98024 ;
-	min-height: 120px;
-	margin: 0;
-}
-.list--box-content-blog {
-	margin: 0;
-	min-height: 120px;
-}
-.list--box-content-blog p {margin: 0;}
-.v2-date {display: block; margin-bottom: 10px; color: #c2c2c2}
-@media (max-width: 992px) {
-    .list--box-title-blog, .list--box-content-blog {min-height: 0px!important; margin:10px 0px;}
-}
-/* cryptocurrencies-2 */
+
 .boxx td {font-size: 18px; border: none; width: 50%; padding: 15px; text-align: center;  }
 td.boxx-title {font-size: 28px; background: #f2f2f2;}
 .div-table {display: table; width: 100%;}
@@ -523,46 +412,8 @@ td.boxx-title {font-size: 28px; background: #f2f2f2;}
     font-weight: 300;	
 }
 
-/* MT5 9 */
-
-/* cryptocurrencies-*/
-.list--box-tt {	
-	padding: 40px 0px;
-}
-
-.list--box-tt-title {
-	font-family: Roboto, Helvetica, Arial, sans-serif; 
-	font-weight:300; 
-	font-size: 28px ; 
-	color: #E98024 ;
-	min-height: 110px;
-	margin: 0;
-}
-.list--box-tt-content {
-	margin: 0;
-	min-height: 190px;
-	padding: 15px;
-}
-.list--box-cta-tt {
-	min-height: 0px;
-	margin: 0;
-	padding-top: 20px;
-}
-.list--box-cta-tt .button{
-	margin: 0;
-}
-@media only screen and (max-width : 768px) {
-	.list--box-tt {padding: 0px 0px;}
-	.list--box-tt-title, .list--box-tt-content {min-height: 0px;}
-	.list--box-tt-title {margin: 15px 0;}
-	.steps-container {margin: 0;}
-	.list--box-cta-tt {padding-top: 15px; margin-bottom: 40px;}
-}
 
 
 @media only screen and (max-width : 768px) {
 .mb-center {text-align: center;}
-}
-.secondary-color {
-    color: #E98024
 }
