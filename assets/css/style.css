@@ -267,9 +267,19 @@ ul li {
 	margin-bottom: 40px;
 	display: block;
 }
+
+.separator-md {
+    height: 20px
+}
+
 .separator-lg {
     height: 30px
 }
+
+.center-text {
+    text-align: center;
+}
+
 .hidden {display: none;}
 
 .display-1 {
