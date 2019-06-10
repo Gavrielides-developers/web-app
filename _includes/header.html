@@ -1,45 +1,139 @@
-<div class="top--bar">
-	<div class="container">
-		<div class="row">
-			<div class="col-md">
-				<div class="top--bar-phone">
-					{% if siteLang == 'ru' %}Телефон Службы Продаж: (357) 26 942 428{% else %}Sales Inquiries Phone: (357) 26 942 428{% endif %}
-				</div>
-			</div>
-			<div class="col-md">
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left shadow">
+    <div class="pushy-content">
+			<div class="pushy-header orange-bg-color">
+				<img src="{{ '/assets/images/cg-1.png' | prepend: domain }}" alt="Costas Gavrielides Paphos Property Developers">
+				<p class="centered font-s">{% if siteLang == 'ru' %}Телефон Службы Продаж:<br>(357) 26 942 428{% else %}Sales Inquiries Phone:<br>(357) 26 942 428{% endif %}</p>
 				<div class="top--bar-language">
 					<ul>
-						<li class="{% if siteLang == 'en' %}hidden{% endif %}"><a href="{{ '/' | prepend: domain }}">English</a></li>
-						<li class="{% if siteLang == 'ru' %}hidden{% endif %}"><a href="{{ '/ru/' | prepend: domain }}">Русский</a></li>
+						<li class="centered {% if siteLang == 'en' %}hidden{% endif %}"><a href="{{ '/' | prepend: domain }}">English</a></li>
+						<li class="centered {% if siteLang == 'ru' %}hidden{% endif %}"><a href="{{ '/ru/' | prepend: domain }}">Русский</a></li>
+					</ul>
+				</div>
+			</div>
+        <ul class="pushy-main">
+				{% include lang.html %}
+				{% if siteLang == "en" %}
+					{% assign NavLang = site.pages | where: "language", "en" %}
+					{% for page in NavLang %}
+					{% if page.tag == "sub-main" %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+						{% endif %}
+					{% endif %}	
+					{% endfor %}
+				{% elsif siteLang == "ru" %}
+					{% assign NavLang = site.pages | where: "language", "ru" %}
+					{% for page in NavLang %}
+					{% if page.tag == "sub-main" %}
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+						{% endif %}
+					{% endif %}
+					{% endfor %}
+				{% else %}
+				{% assign NavLang = site.pages | where: "language", "en" %}
+					{% for page in NavLang %}
+					{% if page.tag == "sub-main" %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+						{% endif %}
+					{% endif %}	
+					{% endfor %}
+				{% endif %}	
+				{% if siteLang == "en" %}
+					{% assign NavLang = site.pages | where: "language", "en" %}
+							<li class="pushy-link"><a href="{{ "/en/" | prepend: domain }}">Home</a></li>
+					{% for page in NavLang %}
+					{% if page.tag == "main" %}	
+						{% if page.title %}
+							<li class="pushy-link"><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+						{% endif %}
+					{% endif %}	
+					{% endfor %}
+				{% elsif siteLang == "ru" %}
+					{% assign NavLang = site.pages | where: "language", "ru" %}
+							<li class="pushy-link"><a href="{{ "/ru/" | prepend: domain }}">Главная страница</a></li>
+					{% for page in NavLang %}
+					{% if page.tag == "main" %}
+						{% if page.title %}
+							<li class="pushy-link"><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+						{% endif %}
+					{% endif %}
+					{% endfor %}
+				{% else %}
+				{% assign NavLang = site.pages | where: "language", "en" %}
+							<li class="pushy-link"><a href="{{ "/en/" | prepend: domain }}">Home</a></li>
+					{% for page in NavLang %}
+					{% if page.tag == "main" %}	
+						{% if page.title %}
+							<li class="pushy-link"><a href="{{ page.url | prepend: domain }}">{{ page.title }}</a></li>
+						{% endif %}
+					{% endif %}	
+					{% endfor %}
+				{% endif %}
+		</ul>
+    </div>
+</nav>
+<div class="stack-separator"></div>
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+<div class="d-nav">
+	<div class="top--bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+					<div class="top--bar-phone">
+						{% if siteLang == 'ru' %}Телефон Службы Продаж: (357) 26 942 428{% else %}Sales Inquiries Phone: (357) 26 942 428{% endif %}
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="top--bar-language">
+						<ul>
+							<li class="{% if siteLang == 'en' %}hidden{% endif %}"><a href="{{ '/' | prepend: domain }}">English</a></li>
+							<li class="{% if siteLang == 'ru' %}hidden{% endif %}"><a href="{{ '/ru/' | prepend: domain }}">Русский</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>	
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="logo">
+						<img src="{{ '/assets/images/gavrielides-logo.png' | prepend: domain }}" alt="Costas Gavrielides Paphos Property Developers">
+					</div>    
+				</div>
+				<div class="col-lg-9">
+					<ul class="">
+					{% include navs/navigation.html %}
+					</ul>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sub--header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<ul class="">
+						{% include navs/subheader-navigation.html %}
 					</ul>
 				</div>
 			</div>
 		</div>
-	</div>	
-</div>	
-<div class="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="logo">
-					<img src="{{ "/assets/images/gavrielides-logo.png" | prepend: domain }}">
-				</div>    
-			</div>
-			<div class="col-lg-9">
-				<ul class="">
-				{% include navs/navigation.html %}
-				</ul>				
-		    </div>
-		</div>
 	</div>
-</div>
-<div class="sub--header">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<ul class="">
-					{% include navs/subheader-navigation.html %}
-				</ul>
+</div>	
+<div class="header-stack primary-bg-color shadow">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-8">
+				<a href="{{ '/' | prepend: SourceUrl }}"><img class="mobile-logo shadow" src="{{ '/assets/images/gavrielides-logo.png' | prepend: domain }}" alt="Costas Gavrielides" title="Costas Gavrielides"></a>
+			</div>
+			<div class="col-4 text-right">
+				<button type="button" class="menu-btn"><img src="{{ '/assets/images/menu.svg' | prepend: SourceUrl }}" width="30" alt="Costas Gavrielides"></button>
 			</div>
 		</div>
 	</div>
