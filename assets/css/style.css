@@ -392,3 +392,12 @@ ul li {
         font-size: 14px;
     }
 }
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.centered {
+    text-align: center;
+}
+.font-s {
+    font-size: 12px !important;
+}
