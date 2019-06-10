@@ -401,3 +401,8 @@ ul li {
 .font-s {
     font-size: 12px !important;
 }
+@media screen and (max-width: 990px) {
+    .mb-centered {
+        text-align: center;
+    }
+}
