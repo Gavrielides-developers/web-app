@@ -436,3 +436,7 @@ ul li {
         text-align: center;
     }
 }
+
+.block-img {
+    display: block;
+}
